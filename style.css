@@ -1,0 +1,69 @@
+body{
+background-image: url("baackground.jpg");
+background-size: cover;
+cursor: none;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  padding: 50px; 
+}
+.slide {
+  display: none;
+  width: 100%;
+}
+.slide.active {
+  display: block;
+}
+ #follower {
+    position: absolute;
+    width: 100px; 
+    height: 50px;
+    pointer-events: none; 
+    transform: translate(-50%, -50%); /
+ }
+#image {
+    width: 200px;
+    height: 200px;
+    position: relative; 
+    left: 50%;   
+    transform: translate(-50%, -50%); 
+    z-index: -1;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#prev {
+  left: 10px;
+}
+#next {
+  right: 10px;
+}
+
+.text, h1{
+    display: flex; 
+    justify-content: center;
+    font-size: 40px; 
+     font-family: "Goldman", sans-serif;
+}
+#weather {
+  font-size: 40px; 
+  margin-top: 10px;
+  font-family: "Goldman", sans-serif;
+  display: flex; 
+  justify-content: center;
+}
+

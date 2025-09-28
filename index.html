@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Guide 3 Module 12</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Lalezar&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--Pointer-->
+  <img id ="follower" src="dolphin-removebg-preview.png">
+<!--Dolphin-->
+<div class="text"> Try moving CD icon with  ←, ↑ or →, on your keyboard!</div></div>
+    <img id ="image" src="cd.png">
+<!--Music-->
+<iframe class="music" style="border-radius:12px" 
+src="https://open.spotify.com/embed/track/4uLU6hMCjMI75M1A2tKUQC"
+width="300" height="380" frameBorder="0" allowfullscreen=""
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+  <!--Weather-->
+    <div class ="text"> In case you did not look out of the window. Here is today’s weather:</div>
+    <div id="weather"></div>
+
+    <!--Image silder-->
+<div class="slider">
+  <img src="mines.weeper1.png" class="slide active">
+  <img src="paint11.png" class="slide">
+  <img src="solitaire1.png" class="slide">
+
+  <button id="prev">❮</button>
+  <button id="next">❯</button>
+</div>
+<!--Google map-->
+<h1>Google Maps</h1>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+<!--Script-->
+  <script src="index.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCamZftjzK5VD9d1QOxmLFCeueEfxgZh8k&callback=myMap"></script>
+</body>
+</html>
