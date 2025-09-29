@@ -95,7 +95,7 @@ const music = document.getElementById("music");
     { transform: 'translatex(1600px)' },
   ],
   {
-    duration: 10000, // 2 seconds
+    duration: 10000, 
     iterations: Infinity, // loop forever
     direction: "alternate" // go back and forth
   }
