@@ -1,4 +1,6 @@
-//Dolphin
+
+
+//CD icon
 
 var img = document.getElementById("image");
 document.addEventListener("keydown", function (event) {
@@ -24,7 +26,7 @@ document.addEventListener("keydown", function (event) {
 }); 
 
 
-//Weather station 
+//Weather station from this website (`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`)
 
 const API_KEY ="a10c63adbe072abaec763bdb77ddbe55"; 
 const city = "Reykjavik";
@@ -32,14 +34,14 @@ const city = "Reykjavik";
 fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`)
   .then(response => response.json())
   .then(data => {
-    console.log(data); // see the full weather data
-    const temp = data.main.temp;       // temperature
-    const desc = data.weather[0].description; // weather description
+    console.log(data); 
+    const temp = data.main.temp;       
+    const desc = data.weather[0].description; 
 
     document.getElementById("weather").textContent =
       `${city}: ${temp}°C, ${desc}  ⛅, `;
   })
-
+document.querySelector("#myDiv").innerHTML += `<h1> 90s Slider</h1>`;
 //Slider
 
 const slides = document.querySelectorAll(".slide");
@@ -79,9 +81,22 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
     title: "Hello London!"
   });
 }
-
+//Dolphin cursor
   const follower = document.getElementById('follower');
   document.addEventListener('mousemove', e => {
     follower.style.left = e.pageX + 'px';
     follower.style.top = e.pageY + 'px';
   });
+//Moving music box
+const music = document.getElementById("music"); 
+ music.animate(
+  [
+    { transform: 'translateX(-20px)' },
+    { transform: 'translatex(1600px)' },
+  ],
+  {
+    duration: 4000, // 2 seconds
+    iterations: Infinity, // loop forever
+    direction: "alternate" // go back and forth
+  }
+);
