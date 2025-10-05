@@ -36,15 +36,6 @@ h1 #myDiv {
     transform: translate(-50%, -50%); 
     z-index: -1;
 }
-.computer-around img {
-  width: 1300px; 
- position: absolute; 
- left: 50%; 
- top: 120%; 
- transform: translate(-50%, -50%);
- padding: 50px; 
-z-index: -2; 
-}
 button {
   position: absolute;
   top: 50%;
