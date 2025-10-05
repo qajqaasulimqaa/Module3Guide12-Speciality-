@@ -39,7 +39,12 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&ap
     const desc = data.weather[0].description; 
 
     document.getElementById("weather").textContent =
-      `${city}: ${temp}°C, ${desc}  ⛅, `;
+      `${city}: ${temp}°C, ${desc}  `;
+      if (temp < 10) {
+      document.getElementById("weather").textContent += "🥶";}
+      else {
+         document.getElementById("weather").textContent += "⛅";
+      }
   })
 document.querySelector("#myDiv").innerHTML += `<h1> 90s Slider</h1>`;
 //Slider
@@ -55,6 +60,7 @@ function showSlide(index) {
     }
   });
 }
+
 
 document.getElementById("prev").addEventListener("click", () => {
   currentSlide = (currentSlide - 1 + slides.length) % slides.length;
@@ -96,7 +102,7 @@ const music = document.getElementById("music");
   ],
   {
     duration: 40000, 
-    iterations: Infinity, // loop forever
-    direction: "alternate" // go back and forth
+    iterations: Infinity, 
+    direction: "alternate" 
   }
 );

@@ -33,7 +33,16 @@ cursor: none;
     transform: translate(-50%, -50%); 
     z-index: -1;
 }
+.computer-around img {
+  width: 1300px; 
+  position: absolute; 
+  z-index: -2;
+  left: 420px; 
+  top: 500px; 
+  padding: 30px; 
 
+
+}
 button {
   position: absolute;
   top: 50%;
