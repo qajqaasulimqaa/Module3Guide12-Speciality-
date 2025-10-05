@@ -73,14 +73,3 @@ button {
   width:100%;
   height:400px
 }
-@media(max-width: 800px){
- .computer-around img{
-    display: flex;
-    flex-direction: column;
-    width: 900px; 
-  }
-*body{
-  display: flex;
-  flex-direction: column;
-}
-}
